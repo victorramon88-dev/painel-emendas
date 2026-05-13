@@ -18,5 +18,5 @@ COPY "Planilha_emendas_pl4_2025 atualizada até 09.04.2026.xlsx" ./
 
 RUN mkdir -p /app/_web_outputs
 
-EXPOSE 8000
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--timeout", "1800", "--workers", "1", "web_app:app"]
+EXPOSE 10000
+CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-10000} --timeout 1800 --workers 1 web_app:app"]

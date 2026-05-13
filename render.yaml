@@ -1,7 +1,7 @@
 services:
   - type: web
     name: painel-emendas
-    env: docker
+    runtime: docker
     plan: standard
     healthCheckPath: /
     envVars:
