@@ -1,10 +1,8 @@
 ﻿__pycache__/
-*.pyc
 _web_outputs/
 *.pdf
 *.zip
 *.bak.xlsx
 Consolidado Emendas*.xlsx
-Consolidado_Emendas.xlsx
 Emendas.xlsx
 Emendas apresentadas*.pdf

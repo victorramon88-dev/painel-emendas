@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: painel-emendas
+    env: docker
+    plan: standard
+    healthCheckPath: /
+    envVars:
+      - key: MAX_UPLOAD_MB
+        value: "900"
+      - key: SECRET_KEY
+        generateValue: true
