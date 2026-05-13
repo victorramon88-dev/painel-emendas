@@ -1,0 +1,17 @@
+services:
+  painel-emendas:
+    build: .
+    container_name: painel-emendas
+    restart: unless-stopped
+    ports:
+      - "8000:10000"
+    environment:
+      MAX_UPLOAD_MB: "900"
+      SECRET_KEY: "troque-esta-chave-em-producao"
+    volumes:
+      - painel_emendas_outputs:/app/_web_outputs
+      - painel_emendas_work:/app/_web_work
+
+volumes:
+  painel_emendas_outputs:
+  painel_emendas_work:

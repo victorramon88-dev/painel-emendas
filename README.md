@@ -16,7 +16,9 @@ Acesse: `http://localhost:8000`
 
 ## Publicar para colegas sem instalação local
 
-Use o `Dockerfile` em um serviço como Render, Railway, Azure App Service, Google Cloud Run ou servidor interno. O container já instala Tesseract OCR com idioma português.
+Use o `Dockerfile` em um serviço como Oracle Cloud, Render, Railway, Azure App Service, Google Cloud Run ou servidor interno. O container já instala Tesseract OCR com idioma português.
+
+Para hospedar gratuitamente com mais capacidade, use Oracle Cloud Always Free com `VM.Standard.A1.Flex`. Veja `ORACLE_DEPLOY.md`.
 
 Variáveis úteis:
 
